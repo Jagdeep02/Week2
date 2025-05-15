@@ -1,0 +1,80 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: brown;
+}
+#form-container{
+    background-color: beige;
+    color: brown;
+    min-height: 30rem;
+    min-width: 50rem;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: 1px 1px 20px 5px hsl(250, 10%, 50%);
+}
+
+#form {
+    display: grid;
+    grid-template-columns: auto 20rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+#form input{
+    margin: 0;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid hsl(0, 10%, 50%);
+    width: 15rem;
+    height: 2.5rem;
+    text-align: center;
+    font-size: 1rem;
+    box-sizing: border-box;
+    grid-column: 2;
+    margin-bottom: 0;
+}
+
+#submit{
+    width: 20rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    margin-top: 2rem;
+    grid-column: 1 / span 2;
+    justify-self: center;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#form input[type="button"]:hover {
+    background-color: #8b0000;
+}
+
+#form label{
+    margin: 0.5rem;
+    padding-right: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: right;
+    grid-column: 1;
+}
+
+.error {
+    color: #ff3333;
+    font-size: 0.8em;
+    grid-column: 2;
+    text-align: left;
+    margin-top: -8px;
+    padding-left: 5px;
+}

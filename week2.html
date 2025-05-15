@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week_2</title>
+    <link rel="stylesheet" href="week2.css">
+</head>
+<body>
+    <!-- Parent Container -->
+    <div id="container"> 
+        <!-- Container for display -->
+        <div id="count">
+        </div>
+        <!-- Container for buttons -->
+        <div id="switch">
+            <button id="sub">-</button>
+            <button id="zero">0</button>
+            <button id="add">+</button>
+        </div>
+    </div><br>
+
+    <!-- Border For other project -->
+    <hr>
+
+    <!-- Parent Container for app 2 -->
+    <div id="container2">
+        <!-- container for button and screen -->
+        <div id="switch2">
+            <!-- Container for Display -->
+            <div id="display">
+            </div>
+            <button id="color">Click On Me</button>
+        </div>
+    </div>
+
+    <!-- Border for other project -->
+    <hr>
+
+    <!-- Parent Container for app 3 -->
+    <div id="container3">
+        <div id="pc">
+            <h1>Computer Side</h1>
+            <img id="pcimg">
+            <h3>Score:<h3 id="pscore"></h3></h3>
+        </div>
+        <div id="user">
+            <h1>User Side</h1>
+            <img id="userimg">
+            <h3>Score:<h3 id="uscore"></h3></h3>
+        </div>
+        <div id="btns">
+            <button id="r">Rock</button>
+            <button id="p">Paper</button>
+            <button id="s">Scissors</button>
+            <button id="clear">Clear</button>
+        </div>
+        <div id="result">
+            <h1>Result: </h1>
+            <h3 id="res"></h3>
+        </div>
+    </div><br>
+    
+    <!-- Border for other project -->
+    <hr>
+
+    <!-- Parent Container for App4 -->
+    <div id="container4">
+        <!-- Container for user input -->
+        <div id="uinput">
+            <h1>Guess Ball Number (1-9)</h1>
+            <Input type="text" id="guess">
+        </div>
+        <!-- Container Total wins text -->
+        <h2>Total wins : <span id="wins"></span></h2>
+        <!-- Container for ball structure -->
+        <div id="Outer">
+            <button id="Innerbtn">
+                <div id="Inner"></div>
+            </button>
+        </div>
+    </div>
+    <!-- Border for other project -->
+    <hr>
+
+    <!-- Parent container for App5 -->
+    <div id="container5">
+        <h1 id="dicehead">Roll The Dice</h1>
+        <button onclick="rollDice()" id="outerdice" ><img id="dice" src="img/dice5.png"></button>
+    </div>
+    <!-- Border for other project -->
+    <hr>
+
+    <!-- Parent container for app6 -->
+    <div id="container6">
+        <h1>Digital Clock</h1><br>
+        <div id="clock"><h1 id="timer">00:00:00 AM</h1>
+        </div>
+    </div>
+    <!-- Border for other project -->
+    <hr>
+
+    <!-- Parent container7  -->
+    <div id="container7">
+        <!-- container for calculator body -->
+        <div id="calculator">
+            <!-- container for screen -->
+            <div id="screen">
+            </div>
+            <!-- container for buttons -->
+            <div id="button">
+                <!-- table for buttons -->
+                <table id="btntable">
+                    <tr>
+                        <td><button id="1" class="cal">1</button></td>
+                        <td><button id="2" class = "cal">2</button></td>
+                        <td><button id="3" class = "cal">3</button></td>
+                        <td><button class = "cal"> / </button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="4" class = "cal">4</button></td>
+                        <td><button id="5" class = "cal">5</button></td>
+                        <td><button id="6" class = "cal">6</button></td>
+                        <td><button class = "cal">*</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="7" class = "cal">7</button></td>
+                        <td><button id="8" class = "cal">8</button></td>
+                        <td><button id="9" class = "cal">9</button></td>
+                        <td><button class = "cal">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="0" class = "cal">0</button></td>
+                        <td><button id="C" class = "cal">C</button></td>
+                        <td><button id="=" class = "cal">=</button></td>
+                        <td><button class = "cal">+</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="week2.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+</head>
+<body>
+    <form id="myform" action="">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <button type="submit" value="set cookie" onclick="cookies">Submit</button>
+    </form>
+    <script lang="javascript">
+        function cookies(){
+            const name = document.getElementsByClassName('name').value;
+            var cookieval = escape(document.myforms.name.value)+";";
+            document.cookie = "name=" + cookieval;
+            document.write("Cookie set: " + document.cookie);
+            console.log("Cookie set: " + document.cookie);
+        }
+    </script>
+</body>
+</html>
